@@ -1,0 +1,9 @@
+{
+    "type" : "To",
+    "id" : 1,
+    "name" : "John Smith",
+    "email": "john@fromCompany.com",
+    "street" : "12 Company Street",
+    "city" : "Sydney",
+    "country" : "Australia"
+}

@@ -1,0 +1,168 @@
+.table3{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 5px;
+}
+
+
+.table3 thead tr td{
+	background-color: rgb(58, 58, 107);
+    color: white;
+	font-size: 20px;
+	text-align: left;
+	padding:10px 10px;
+} 
+
+
+.table3 td:first-child{
+	width: 35%;
+}
+
+.table3 td:last-child{
+	width: 10%;
+}
+
+.table3 tbody td{
+  padding:12px 15px;
+  text-align: left;
+  font-size:13px;
+}
+
+.table3 tfoot {
+	font-size: 14px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.table3 tfoot tr td {
+	padding:5px 5px;
+}
+
+.table3 tfoot tr:last-child{
+	padding:20px;
+	font-size: 15px;
+	text-align: right;
+	font-weight: bold;
+}
+
+/* bottom-left border-radius */
+.table3 thead tr:first-child td:last-child {
+	border-top-right-radius: 6px;
+}
+
+/* bottom-left border-radius */
+.table3 thead tr:first-child td:first-child {
+	border-top-left-radius: 6px;
+}
+
+/* bottom-left border-radius */
+.table3 thead tr:last-child td:first-child {
+border-bottom-left-radius: 6px;
+}
+
+/* bottom-right border-radius */
+.table3 thead tr:last-child td:last-child {
+border-bottom-right-radius: 6px;
+}
+
+.table3 tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+.table3 tbody tr:nth-child(odd){
+	background-color: #f5f5f5;
+}
+
+.btnDelete {
+	width: 80%;
+	border-radius: 6px;
+	border-color: rgb(243, 83, 83);
+	padding: 5px;
+	background-color:rgb(243, 83, 83);
+	color: white;
+	font-size: 10px;
+	cursor: pointer;
+}
+.btnDelete:hover {
+	border-color: red;
+	background-color: red;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 10px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.btnSave {
+	background-color: #45a049;
+	width: 200px;
+	border-radius: 6px;
+	padding: 10px;
+	border-color:#45a049;
+	color: white;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.btnSave:hover {
+	background-color: green;
+	border-color:green;
+}
+
+
+form {
+	width: 400px;
+	text-align: left;
+	font-size: 15px;
+}
+
+form {
+	label {
+		font-weight: bold;
+	}
+}
+
+
+/*responsive*/
+
+@media(max-width: 500px){
+
+	.table3, .table3 thead, .table3 tfoot,.table3 tbody, .table3 tr, .table3 td{
+		display: block;
+		width: 100%;
+	}
+	.table3 tr{
+		margin-bottom:15px;
+	}
+	.table3 td{
+		text-align: left;
+		padding-left: 50%;
+		position: relative;
+	}
+	.table3 td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
